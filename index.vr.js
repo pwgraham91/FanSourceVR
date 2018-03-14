@@ -26,19 +26,16 @@ export default class FanSourceVR extends React.Component {
             alignItems: 'center',
             layoutOrigin: [2.5, 1, 0],
             transform: [
-              {rotateY: 75},
-              {translate: [3, -1, 3]},
+              {rotateY: 65},
+              {translate: [3, -1.1, 3]},
               ],
           }}>
           <Video
             style={{height: 2.25, width: 4}}
-            source={asset('soccer/111.mov')}
+            source={asset('soccer/222.mov')}
             playerState={this.state.playerState}
             loop={true}
           />
-          <VideoControl
-            style={{height: 0.2, width: 4}}
-            playerState={this.state.playerState} />
         </View>
         <View
           style={{
@@ -48,13 +45,10 @@ export default class FanSourceVR extends React.Component {
           }}>
           <Video
             style={{height: 2.25, width: 4}}
-            source={asset('soccer/222.mov')}
+            source={asset('soccer/111.mov')}
             playerState={this.state.playerState}
             loop={true}
           />
-          <VideoControl
-            style={{height: 0.2, width: 4}}
-            playerState={this.state.playerState} />
         </View>
         <View
           style={{
@@ -68,9 +62,6 @@ export default class FanSourceVR extends React.Component {
             playerState={this.state.playerState}
             loop={true}
           />
-          <VideoControl
-            style={{height: 0.2, width: 4}}
-            playerState={this.state.playerState} />
         </View>
       </View>
     );
