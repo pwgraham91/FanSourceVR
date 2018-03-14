@@ -3,7 +3,6 @@ import {
   AppRegistry,
   asset,
   Pano,
-  Text,
   View,
   Video,
   MediaPlayerState,

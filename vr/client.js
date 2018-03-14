@@ -4,10 +4,21 @@
 
 // Auto-generated content.
 import {VRInstance} from 'react-vr-web';
+import * as OVRUI from 'ovrui';
+import ControllerRayCaster from 'react-vr-controller-raycaster';
+import * as THREE from 'three'
 
 function init(bundle, parent, options) {
+  const scene = new THREE.Scene();
+  console.log(scene)
   const vr = new VRInstance(bundle, 'FanSourceVR', parent, {
-    // Add custom options here
+    raycasters: [
+      new ControllerRayCaster({scene, color: '#ff0000'}),
+      new OVRUI.MouseRayCaster(),
+    ],
+
+    scene: scene,
+    cursorVisibility: 'visible',
     ...options,
   });
   vr.render = function() {
