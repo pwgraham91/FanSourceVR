@@ -21,7 +21,6 @@ export default class FanSourceVR extends React.Component {
     return (
       <View>
         <Pano source={asset('stadium_pano.jpg')}/>
-
         <View
           style={{
             alignItems: 'center',
@@ -31,6 +30,20 @@ export default class FanSourceVR extends React.Component {
           <Video
             style={{height: 2.25, width: 4}}
             source={asset('elephants-dream.webm')}
+            playerState={this.state.playerState} />
+          <VideoControl
+            style={{height: 0.2, width: 4}}
+            playerState={this.state.playerState} />
+        </View>
+        <View
+          style={{
+            alignItems: 'center',
+            layoutOrigin: [0.5, 0.5, 0],
+            transform: [{translate: [0, 0, -4]}],
+          }}>
+          <Video
+            style={{height: 2.25, width: 4}}
+            source={asset('soccer/1st.mp4')}
             playerState={this.state.playerState} />
           <VideoControl
             style={{height: 0.2, width: 4}}
