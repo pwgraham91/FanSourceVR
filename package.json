@@ -10,14 +10,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "dashjs": "~2.4.1",
     "ovrui": "~2.0.0",
     "react": "16.0.0",
     "react-native": "~0.48.0",
-    "three": "^0.87.0",
     "react-vr": "~2.0.0",
-    "react-vr-web": "~2.0.0"
+    "react-vr-web": "~2.0.0",
+    "three": "^0.87.0"
   },
   "devDependencies": {
+    "tar-fs": "~1.15.2",
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
     "jest": "^19.0.2",
@@ -27,5 +29,9 @@
   },
   "jest": {
     "preset": "react-vr"
+  },
+  "peerDependencies": {
+    "react": "~15.4.1",
+    "react-native": "~0.42.0"
   }
 }
