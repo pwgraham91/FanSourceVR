@@ -53,8 +53,11 @@ export default class FanSourceVR extends React.Component {
         <View
           style={{
             alignItems: 'center',
-            layoutOrigin: [0, 0, 0],
-            transform: [{translate: [0, 0, -4]}],
+            layoutOrigin: [-0.7, 2.5, 0],
+            transform: [
+              {rotateY: -65},
+              {translate: [-1.7, 0, 0.2]}
+              ],
           }}>
           <Video
             style={{height: 2.25, width: 4}}
