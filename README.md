@@ -1,5 +1,5 @@
 # FanSourceVR
-A React VR app that shows different angles of a sporting event
+A React VR app that shows different angles of a sporting event with video panels
 
 This was all built for the 2018 SXSW Hackathon
 ## Team Members
