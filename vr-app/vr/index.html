@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
-    <!-- When you're ready to deploy your app, update this line to point to your compiled client.bundle.js -->
-    <script src="./client.bundle?platform=vr"></script>
+    <!--Production-->
+    <script src="./build/client.bundle.js?platform=vr"></script>
+    <!-- Development -->
+    <!--<script src="./client.bundle?platform=vr"></script>-->
     <script>
-      // Initialize the React VR application
-      ReactVR.init(
+        // Production
+        ReactVR.init(
+          // When you're ready to deploy your app, update this line to point to
+          // your compiled index.bundle.js
+          './build/index.bundle.js?platform=vr&dev=true',
+          // Attach it to the body tag
+          document.body
+        );
+        // Development
+        // ReactVR.init(
         // When you're ready to deploy your app, update this line to point to
         // your compiled index.bundle.js
-        './index.vr.bundle?platform=vr&dev=true',
+        // './index.vr.bundle?platform=vr&dev=true',
         // Attach it to the body tag
-        document.body
-      );
+        // document.body
+      // );
     </script>
   </body>
 </html>
